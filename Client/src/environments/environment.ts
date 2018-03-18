@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-   apiUrl: 'http://127.0.0.1:8000/' //your local API URL here
+   apiUrl: 'http://127.0.0.1:8000/api' //your local API URL here
    //... more of your variables
 };
