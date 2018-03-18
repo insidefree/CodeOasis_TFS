@@ -9,6 +9,7 @@
 - Install [Composer](https://getcomposer.org/) and [nodeJS](https://nodejs.org).
 - Go to `Server` folder and run `composer install` to install dependencies.
 - Set your DB connections in `.env`: DB_CONNECTION (mysql, pgsql, sqlsrv, sqlite), DB_DATABASE, DB_PORT, DB_USERNAME, DB_PASSWORD.
+- OSx DB settings: /config/database.php 'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
 - Generate keys: php artisan key:generate; php artisan jwt:generate; and check it at .env
 - To update your DB to current version go to `Server` folder and run `php artisan migrate`. If you want to rollback old migration use `php artisan migrate:rollback`.
 - (optional) If you want to change `APP_KEY` run `php artisan key:generate` to generate app key. If you get any error on key generation, check if line `APP_KEY=` exists in `.env`, then rerun command. Make sure that apache has access to write into `Server/bootstrap/cache` and `Server/storage` folders. 
